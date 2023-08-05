@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+  
+
+.p1 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: larger;
+    font-family: sans-serif;
+    color: yellow;
+    font-weight: 500;
+}
+
+.p2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: larger;
+    font-family: sans-serif;
+    color: yellow;
+    font-weight: 500;
+}
+
+.p3 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: larger;
+    font-family: sans-serif;
+    color: yellow;
+    font-weight: 500;
+}
+
+.p4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: larger;
+    font-family: sans-serif;
+    color: yellow;
+    font-weight: 500;
+}
+
+.p5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: yellow;
+}

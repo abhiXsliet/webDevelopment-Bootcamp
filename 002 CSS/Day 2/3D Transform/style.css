@@ -1,0 +1,28 @@
+/* CSS 3D-transforms
+ Same operations can be performed w.r.t 3D as we discussed in 2D
+*/
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.translated1 {
+    transform: perspective(10px) translateZ(-10px);
+}
+
+.translated2 {
+    margin: 50px;
+    transform: perspective(100px) translateZ(50px);
+}
+
+/* We need to turn on perspective while scaling in z-axis to maintaining the illusion of depth in the scene. 
+   On the other hand, rotation in 3D doesn't require to turn on perspective because rotating in z-axis simply changes the orientation of object.
+*/
+.scaled {
+    margin: 250px;
+    transform: rotateZ(30deg);
+    /* transform: perspective(350px) scaleZ(5) rotateX(30deg) rotateY(30deg); */
+}

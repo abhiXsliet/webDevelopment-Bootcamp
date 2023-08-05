@@ -1,0 +1,52 @@
+/* 
+CSS DIMENSION PROPERTY
+    -> Width
+    -> Height
+    -> Min-height
+    -> Min-width
+    -> Max-height
+    -> Max-width
+
+OVERFLOW PROPERTY
+    -> The overlow CSS shorthand property sets the desired behaviour for an element's overflow 
+       -i.e., when an element's content is too big to fit in its block formatting context - in both directions.
+    -> shorthand of overflow is in 'x' and 'y' direction
+
+    -> Values: 
+            -> Visible -> content overflow will be visible
+            -> Hidden  -> content overflow will be cut-off
+            -> Scroll  -> content will be scrolled here
+            -> Auto    -> It is visible if content fits other if overflow happens then content can be scrolled
+            -> BY DEFAULT OVERFLOW IS VISIBLE
+            
+ */
+
+.box {
+    /* content will overflow */
+    max-height: 100px;
+    border: 1px solid black;
+    overflow: visible;
+    /* overflow: hidden; */
+}      
+
+.div-2 {
+    margin-top: 120px;
+    /* min-height/min-width expands to fit the content here */
+    min-height: 10px;
+    border: 1px solid black;
+}
+
+.div-3 {
+    margin-top: 50px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+.div-4 {
+    margin-top: 50px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: auto;
+}
+

@@ -1,0 +1,31 @@
+/* 
+CSS - 2D TRANSFORMS
+-> CSS transforms allow you to move, rotate, scale and skew elements
+        -> With transform property you can use following methods.
+                            -> translate()
+                            -> rotate()
+                            -> scaleX()
+                            -> scaleY()
+                            -> scale()
+                            -> skewX()
+                            -> skewY()
+                            -> skew()
+                            -> matrix() -> with matrix() all the above property can be applied
+*/
+
+.box {
+    background-color: aqua;
+    margin: 200px;
+    padding-left: 500px;
+    /* translating on x by 10px and on y by 20px */
+    /* transform: translate(10px, 20px); */
+    /* transform: rotate(-45deg); */
+    /* transform: scale(1.5, 10);  */
+    /* transform: scaleX(4); */
+    /* transform: scaleY(3); */
+
+    /* transform: skew(45deg); */
+    /* transform: skewX(3); */
+    /* transform: skewY(45deg); */
+    transform: skewY(-0.06turn);
+}

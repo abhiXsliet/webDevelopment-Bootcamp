@@ -1,0 +1,183 @@
+ /* HTML -> What ?
+         -> Description
+         -> Skeleton */
+
+/* CSS -> How?
+       -> Appearance
+       -> Styling
+       -> formatting */
+
+
+/* SELECTORS IN CSS
+    1. SIMPLE SELECTOR
+        i. Element Selector/type slector/tag selector
+        ii. Class Selector
+        iii. ID Selector
+    2. PSEUDO-CLASS SELECTOR
+    3. MULTIPLE SELECTOR
+    4. Universal Selector -> ?
+    5. Nested Selector    -> ?
+    6. Attribute Selector -> ?
+
+    SELECTOR 
+        a{
+            color: #02b3e4;
+        }
+
+    Here, a is selector with color property and value
+    
+    i. Element Selector/type slector/tag selector
+    -> CSS can select HTML elements by using an element's tag name. 
+       A tag name is the word (or character) between HTML angle brackets.
+        p{
+            color : red;
+        }
+    
+    ii. Class Selector
+    ->  CSS is not limited to selecting elements by tag name. HTML elements can have more than just a tag name;
+        they can also  have attributes. One common attribute is the class attribute. It's also possible to select an element by its class attribute. 
+    
+    ->  To select an HTML element by its class using CSS, a period(.) must be prepended to the class's name.
+                .green {
+                    color : green;
+                }
+
+    iii. ID Selector
+    ->  For situations where you need more specificity in styling. You may also select elements for CSS using an id attribute. 
+        You can have different ids associated with a class (although a class is not required).
+   
+    ->  The id attribute can be added to an element, along with a class attribute. 
+        On the CSS side, the delineation is made by using (#) to represent an id, the same way (.) is used for class.
+                id = "temp-button"
+                #temp-button {
+                    color : red;
+                }
+
+    2. PSEUDO-CLASS SELECTOR 
+    -> A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). 
+       for example, :hover can be used to change a button's color when the user's pointer hovers over it.
+                selector:pseudoclass{
+                    ---
+                }
+
+ */
+
+
+
+/* 
+How to add styling to HTML
+-> INLINE CSS
+-> INTERNAL CSS/ STYLE TAG
+-> EXTERNAL CSS
+
+                        INLINE CSS
+->  To style an HTML element, you can add the style attribute directly to the opening tag. 
+    After you add the attribute, you can set it equal to the CSS style(s) you'd like applied to that element.
+
+->  Inline Styles should be avoided at all costs because they make it impossible to alter styles from an external stylesheet.
+
+->  That said, there will be many times when you need to apply styles to only a specific HTML element.
+    For this, you should always use CSS classes instead of inline styles.
+
+                        INTERNAL CSS/ STYLE TAG
+->  Inline styles are a fast way of styling HTML, but they also have limitations. 
+    If you wanted to style, for example, multiple <h1> elements, you would have to add inline styling to each element manually. 
+    In addition, you would also have to maintain the HTML code when additonal <h1> elements are added.
+
+->  Fortunately HTML allows you to write CSS code in its own dedicated section with the <style> element.
+    CSS can be written between opening and closing style tags. To use the <style> element, it must be placed inside the <head> element.
+
+                        EXTERNAL CSS (Majority usage)
+->  When HTML and CSS code are in separate files, the files must be linked. 
+    Otherwise, the HTML file won't be able to locate the CSS code, and the styling will not be applied.
+
+-> You can use the <link> element to link HTML and CSS files together. 
+   The <link> element must be placed within the head of the HTML file.
+
+-> The Relation between current document and destignation document is "stylesheet"
+                <link rel = "stylesheet" href = "style.css"> 
+ */
+
+
+
+/* 
+SPECIFICITY
+-> Because elements can have multiple CSS selectors, there is a hierarchy for the weight given to each type of selector.
+-> Here is a the logical order of selectors from least to most weight assigned : 
+        -> Type Selectors (e.g., h1) and pseudo-elements (e.g., ::before)
+        -> Class Selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+        -> ID Selectors (e.g., #example)
+        
+Tag Selector < .class < #ID < Inline CSS < !important  (Very Bad Practice)  
+
+ */
+
+
+
+/* 
+BOX MODEL in CSS
+-> The box model is the basic building block of CSS
+-> According to the box model concept every element on a page is a rectangular box and may have width, height, padding, borders, and margins.
+
+
+ */
+
+
+
+/* 
+COLORS IN CSS
+-> Colors in CSS can be specified by the following methods
+        -> Hexadecimal colors
+        -> RGB colors
+        -> Predefined/Cross-browser color names
+        -> RGBA colors
+        -> HSL colors
+        -> HSLA colors
+        Above three are most commonly used
+
+                    HEXADECIMAL COLORS
+->  A Hexadecimal color is specified with : #RRGGBB, where RR (red), GG (green), and BB (blue) hexadecimal integers specify the components of the color. 
+    All values must be between 00 and FF.
+->  For example, the #0000ff value is rendered as blue, because the blue component is set to its highest value (ff) and the others are set to 00.
+
+                    RGB COLORS
+->  An RGB color value is specified with the rgb() function, which has the following syntax: rgb(red, green, blue)
+->  Each parameter (red, green and blue) defines the intensity of the color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%).
+->  For example, the rgb(0, 0, 255) value is rendered as blue, because the blue parameter is set to its highest value (255) and the others are set to 0.
+
+                    PREDEFINED/CROSS-BROWSER COLOR NAMES
+->  140 color names are predefined in the HTML and CSS color specification.
+    For example, aqua, pink, green, etc.
+*/
+
+
+/* 
+FONTS
+    -> Font-Family
+    -> Font-Weight
+    -> Font-Style
+    -> Emphasis & Importance
+    -> How to add External Fonts?
+
+    ** Default font size of body is 16px.
+    
+    ** Default margin value of body tag is 8px(top, left, right, bottom) when not explicity set by developers. 
+       it is browser dependent it is recommended to explicitly set margin values for body.
+*/
+
+/* 
+UNITS IN CSS
+1. ABSOLUTE UNIT      -> mm, cm, in, px
+2. PERCENTAGE UNIT    -> --%(with respect of parent element)
+    -> % with respect of parent for example., .div {width: 10%;} Here 10% of parent width (let say 500) which will be 50px
+3. RELATIVE UNIT
+    -> I. Relative to Font Size -> em (relative to parent element), 
+                                -> rem (relative to root(html) element)
+
+    -> II. Relative to Document -> vh [(1/100) *width of viewport], 
+                                -> vw [(1/100) *height of viewport]
+
+    **The main difference between 1vw and 1% is that 1vw is relative to the viewport(visible area of a web page) width, 
+      while 1% is relative to the parent container's width.
+
+*/

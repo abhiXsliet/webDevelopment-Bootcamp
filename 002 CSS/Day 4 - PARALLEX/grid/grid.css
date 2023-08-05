@@ -1,0 +1,92 @@
+/* 
+                            WHAT IS CSS GRID ?
+-> A grid is a collection of horizontal and vertical lines creating a pattern against which we can line up our design elements.
+-> They help us to create layouts in which our elements won't jump around or change width as we move from page to page, providing greater consistency 
+    for e.g., 2-D Array, suduko, etc.
+
+        -> CSS Grid Layout is a two-dimensional layout system for the web.
+        -> It lets you lay content out in rows and columns.
+        -> It has many features that make building complex layouts starightforward.
+        -> A grid will typically have columns, rows, and then gaps between each row and column. 
+           The gaps are commonly referred to as gutters (row gap or column gap).
+        -> line 1, line 2, line 3.. are the column or row gap respectively.
+
+** FLEXBOX IS SPECIFIC TO CONTENT AND GRID SPECIFIC TO LAYOUT CREATIONS
+
+** Grid is a CSS layout module that allows for easy alignment and positioning of HTML elements in a two-dimensional grid, 
+   while Flexbox is a way to arrange elements in a container that makes it easier to position and distribute space between them.
+
+
+
+                            LINE BASED PLACEMENT
+-> We now move on from creating a grid to placing things on the grid. Our grid always has lines - these are numbered beginning with 1 and relate to the writing mode of the document. 
+    -> For example, column line 1 in English (Written left-to-right) would be on the left-hand side of the grid and row line 1 at the top, while in Arabic
+    -> grid-column-start
+    -> grid-column-end
+    -> grid-row-start
+    -> grid-row-end
+
+-> Shorthand Properties : -> grid-row, grid-column, grid-area
+
+            SOME MORE PROPERTIES
+            -> justify-content
+            -> align-content
+            -> justify-self
+            -> justify-items
+            -> align-items
+            -> align-self
+            -> place-items
+            -> place-self
+
+
+ */ 
+
+
+
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+/* FLEXIBLE GRID   */
+ .container {
+    background-color: brown;
+    height: 500px;
+    border: 4px solid yellow;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 100px repeat(2, 1fr) 200px; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: 50px repeat(3, 1fr) 50px; */
+    gap: 25px;
+}
+
+.box {
+    background-color: aqua;
+    border: 4px solid black;
+    /* width: 80px; */
+    /* height: 80px; */
+}
+
+#box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#box3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#box8 {
+    background-color: orchid;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+}
+
+ 

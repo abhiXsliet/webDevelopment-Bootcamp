@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-1</title>
+    <!-- External CSS -->
+    <!-- <link rel="stylesheet" href=""> -->
+
+
+    <style>
+        /* Element selector/Tag selector/ Type selector */
+        p{
+            color: red;
+            font-size: larger;
+        }
+
+        h1 {
+            background-color: aqua;
+        }
+        /*         
+        h1, h2, h3 {
+            font-size: small;
+        }
+        h4, h5, h6 {
+            font-size: large;
+        } */
+
+
+        /* Class selector */
+        .green {
+            color: green;
+        }
+
+        .small{
+            font-size: small;
+        }
+        .big{
+            font-size: large;
+        }
+
+        /* id's selector */
+        #first-button{
+            color: red;
+        }
+
+        #intro-para{
+            background-color: aqua;
+        }
+
+        /* Pseudo selector */
+        button:hover{
+            color:yellow;
+        }
+        /* 
+        a:hover{
+            color: green;
+        }
+        */
+        /* 
+        .link-class:hover{
+            color:violet;
+        }
+        */
+        #link-id:hover{
+            color: brown;
+        }
+
+        /* SPECIFICITY */
+        #divi {
+            background-color: yellow;
+        }
+        div {
+            background-color: red;
+            color: blue;
+        }
+        .divc {
+            background-color: orange;
+            font-size: large;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<!--     
+    <p>This is my First Paragraph</p>
+    <h1>This is my First Heading</h1>
+    <h1>This is Second Heading </h1>
+
+-->
+
+
+<!-- 
+    <p class="green">abcd</p>
+    <p class="green">pqrs</p>
+    <p class="blue">xyz</p>
+-->
+
+
+<!-- 
+    <h1 class="small">This is my Heading-1</h1>
+    <h2 class="small">This is my Heading-2</h2>
+    <h3 class="small">This is my Heading-3</h3>
+    <h4 class="big">This is my Heading-4</h4>
+    <h5 class="big">This is my Heading-5</h5>
+    <h6 class="big">This is my Heading-6</h6>
+-->
+
+<!--     
+    <button class="fist-button">SUBMIT</button> 
+    <a href="https://www.facebook.com" class="link-class" id="link-id">facebook</a>
+    <p id="intro-para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto cumque est repudiandae, deleniti vero obcaecati porro nemo distinctio sed consequuntur non quas modi nostrum inventore, perferendis nesciunt? Accusantium, sunt vero.
+    </p>
+-->
+
+
+    <!-- INLINE CSS -->
+    <!-- <P style="font-style:italic">Changes being applied using INLINE CSS</P> -->
+
+    <!-- Internal CSS -->
+
+
+<!--
+    <style>
+        ------
+    </style>
+-->
+
+    <!-- External CSS -->
+    <!-- <link rel="stylesheet" href=""> -->
+
+
+    <!-- SPECIFICITY -->
+    <div class="divc" id="divi">What is Up Mitron</div>
+
+
+</body>
+</html>
+
+
+
+<!-- Difference between Viewport and Root Element -->
+<!-- 1. Viewport is dynamic while root element is static -->
+<!-- 
+     2. The viewport is affected by the 'meta viewport' tag in the HTML head section, which can be used to set the initial scale, width, and height of the viewport, and to control how the page is displayed on different devices.
+        while root element is typically styled using CSS and can be used to set global styles and properties for the entire page, including font size, line height, and color. 
+-->
+
+<!-- 
+    The viewport refers to the visible area of the page that is displayed in the browser window, 
+    while the root element is the top-level element(i.e,. 'html' tag) of the HTML document and is used to define the overall structure and layout of the page. 
+-->

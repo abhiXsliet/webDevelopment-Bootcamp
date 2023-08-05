@@ -1,0 +1,85 @@
+/* 
+CSS POSITION PROPERTY
+-> The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky)
+    Types:-
+        -> Static -> By DEFAULT property
+        -> Relative
+        -> Fixed
+        -> Absolute
+        -> Sticky
+
+                        POSITION : RELATIVE
+-> An element with position: relative; is positioned relative to its normal position.
+
+    -> Setting the top, right, bottom and left protperties of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+       Other content will not be adjusted to fit into any gap left by the element.
+                        
+                        POSITION : FIXED
+-> An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
+   The top, right, bottom and left properties are used to position the element.
+
+                        POSITION : ABSOLUTE
+-> An element with position: absolute; is positioned relative to the nearest positioned ancestor which should be non-static (instead of positioned relative to the viewport, like fiexed).
+
+-> However, if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+-> NOTE : Absolute positioned elements are removed from the normal flow, and can overlap elements.
+        -> Overlapping happens here
+                        
+                        POSITION : STICKY   
+-> An element with position: sticky; is positioned based on the user's scroll position.
+
+    -> A sticky element toggles between relative and fixed, depending on the scroll position. 
+    -> It is positioned relative until a given offset is met in the viewport - then it "sticks" in place (like position: fixed).
+
+
+
+
+ */ 
+
+
+.wrapper {
+    height: 4000px;
+    width: 100vw;
+    background-color: yellow;
+}
+
+div {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+/* default static position */
+p {
+    position: static;
+}
+
+/* relative to the normal position */
+#box3 {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    border: 5px solid green;
+}
+
+/* fixed position */
+#box5 {
+    position: fixed;
+    margin: 40px;
+    border: 5px solid brown;
+}
+
+#box6 {
+    position: absolute;
+    border: 5px solid blueviolet;
+}
+
+/* sticky position */
+#box2 {
+    position: sticky;
+    top: 0px;
+    border: 2px solid rgb(197, 26, 148);
+}

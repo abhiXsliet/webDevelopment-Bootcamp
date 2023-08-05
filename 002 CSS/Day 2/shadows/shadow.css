@@ -1,0 +1,58 @@
+/* 
+CSS SHADOW EFFECTS
+With CSS we can add shadow to text and to element
+
+Types -> Text-shadow
+      -> Box-shadow
+
+        Text-shadow
+-> The CSS text-shadow property applies shadow to text.
+        -> You can add horizontal/Vertical shadows.
+        -> Color can be added.
+        -> Blur can be added.
+        -> Multiple shadows on 1 text can be added
+
+        Box-shadow
+-> The CSS box-shadow property is used to apply one or more shadows to an element.
+        -> Default color of shadow is text colour
+        -> Color of shadow can be changed
+        -> Blur can be added
+        -> Spread-radius can be changed
+        -> Multiple shadows can be added using comma
+
+*/
+
+
+h1 {
+    /* text-shadow: horizontal value, vertical value, blur value, color */
+    text-shadow: 3px 3px 3px red;
+    /* multiple shadows can be added too */
+    text-shadow: 3px 3px 3px red, 7px 7px 7px green;
+}
+
+.box {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: -10px -10px 10px green, 15px 15px 15px orange;
+    color: red;
+}
+
+.spread {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    /* This means that the box will have a shadow that is 2 pixels to the right, 2 pixels down, with a blur radius of 4 pixels, and a spread size of 10 pixels.
+    10px contract the shadow outward & making the box appear larger while -10px contract shadow outward making box appear smaller*/
+    box-shadow: 2px 2px 4px 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 2px 4px -10px rgba(0, 0, 0, 0.5); */
+}
+
+/* How can we add Border using shadows ? */
+.myDiv {
+    margin: 40px;
+    width: 200px; 
+    height: 200px; 
+    box-shadow: 0 0 0 5px red;
+}
+

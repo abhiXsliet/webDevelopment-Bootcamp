@@ -1,0 +1,63 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    width: 412px;
+    height: 400px;
+    margin: 50px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+img {
+    width: 380px;
+    height: 210px;
+    margin: 14px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 3px;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.underline {
+    width: 300px;
+    height: 2px;
+    margin-left: 15px;
+    background-color: rgb(233, 233, 233);
+}
+
+p {
+    display: inline-block;
+}
+
+.discount {
+    color: rgb(118, 118, 195);
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.original {
+    color: rgb(127, 127, 127);
+    text-decoration: line-through;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.off {
+    display: inline;
+    margin-left: 15px;
+    padding: 6px;
+    font-weight: 700;
+    color: white;
+    background-color: #30D5A8;
+    border-radius: 7px;
+}
