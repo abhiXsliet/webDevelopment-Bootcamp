@@ -1,0 +1,11 @@
+.container{
+    height: 700px;
+    border: 1px solid red;
+    background-color: yellow;
+
+    display: grid;
+    grid-gap: 10px;
+
+    grid-template-rows: repeat(2,1fr);
+    
+}
