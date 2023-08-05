@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    overflow-x: hidden;
+}
+
+.codeblock1, .codeblock2 {
+    border-radius: 100%;
+    -webkit-filter: blur(34px);
+    filter: blur(34px);
+    height: 257.05px;
+    left: calc(50% - 263.005px);
+    opacity: .2;
+    top: calc(50% - 175.995px);
+    -webkit-transform: matrix(1,0,-.03,1,0,0);
+    transform: matrix(1,0,-.03,1,0,0);
+    width: 372.95px;
+}
+
+.codeblock1 {
+    background: linear-gradient(123.77deg,#8a2be2 -6.46%,orange 59.04%,#f8f8ff 124.53%);
+}
+
+.codeblock2 {
+    background: linear-gradient(118.19deg,#1fa2ff -3.62%,#12d8fa 50.44%,#a6ffcb 104.51%);
+}
+
+.code-border {
+    background: linear-gradient(111.93deg,rgba(14,26,45,.24) -1.4%,rgba(17,30,50,.38) 104.96%);
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom,#ffffff38,#ffffff00);
+}
+.homepage_bg {
+    background: url('../src/assets/Images/bghome.svg')
+}
+
