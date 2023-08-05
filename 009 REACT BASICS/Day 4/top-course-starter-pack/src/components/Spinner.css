@@ -1,0 +1,26 @@
+/* .spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 8px solid #0000;
+    border-right-color: #766DF497;
+    position: relative;
+    animation: s4 1s infinite linear;
+  }
+  .spinner:before,
+  .spinner:after {
+    content: "";
+    position: absolute;
+    inset:-8px;
+    border-radius: 50%;
+    border:inherit;
+    animation:inherit;
+    animation-duration: 2s;
+  }
+  .spinner:after {
+    animation-duration: 4s;
+  }
+  
+  @keyframes s4 {
+    100% {transform: rotate(1turn)}
+  } */

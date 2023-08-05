@@ -1,0 +1,116 @@
+/* write your css here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", "sans-serif";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 6vh;
+    border: 7px dashed rgb(1, 17, 160);
+    border-radius: 20px;
+    padding: 1vh 5vw;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 400px;
+    height: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image {
+    width: 380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.description {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tour-price {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    color: #1faa59;
+    font-size: 1.3rem;
+}
+
+.tour-name {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+
+.read-more {
+    color: #12b0e8;
+    cursor: pointer;
+}
+
+.btn-red {
+    margin-top: 40px;
+    padding: 10px 80px;
+    border: 1px solid #b4161b;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #b4161b21;
+}
+
+.btn-red:hover {
+    background-color: red;
+    color: white;
+    transition: all 0.2s;
+}
+
+.refresh {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-white {
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-white:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.2s;
+}
